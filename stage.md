@@ -17,6 +17,9 @@ for file in functions/* ; do
   fi
 done
 ```
+## installing git flow
+`apt-get install git-flow`
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
