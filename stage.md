@@ -21,5 +21,5 @@ done
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
 | ${!een_variabele} | verwijst naar de waarde in een_variabele|
-|  | |
+| set -x | bij het debuggen van scripts |
 
