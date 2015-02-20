@@ -5,11 +5,8 @@
 ## importing functions
 ```
 for file in functions/* ; do
-
   if [ -f "$file" ] ; then
-
     . "$file"
-
   fi
 done
 ```
