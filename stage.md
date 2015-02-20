@@ -10,7 +10,6 @@ for file in functions/* ; do
   fi
 done
 ```
-#### `$1` Expands to the exit status of the most recently executed foreground pipeline
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
