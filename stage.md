@@ -19,7 +19,8 @@ done
 ```
 ## installing git flow
 `apt-get install git-flow`
-
+##git multiple results error
+`git config --global --get-all user.name` 
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
