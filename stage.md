@@ -1,3 +1,8 @@
+## lamp stack in ubuntu via apt-get
+```bash
+sudo apt-get update
+sudo apt-get install lamp-server^
+```
 ## remotely adding ssh-key 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.186`
 ### with different port than 22
