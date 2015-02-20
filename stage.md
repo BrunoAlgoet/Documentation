@@ -11,3 +11,9 @@ for file in functions/* ; do
 done
 ```
 #### `$1` Expands to the exit status of the most recently executed foreground pipeline
+| Command | Description |
+| ------- | ------ |
+| $? |  Expands to the exit status of the most recently executed foreground pipeline |
+| ${!een_variabele} | verwijst naar de waarde in een_variabele|
+|  | |
+
