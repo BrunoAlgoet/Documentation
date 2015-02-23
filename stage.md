@@ -4,9 +4,9 @@ sudo apt-get update
 sudo apt-get install lamp-server^
 ```
 ## clone a repo from hera exaple:
-`git clone brunoalgoet@hera:/var/repositories/hostingplatform/ansible`
+`git clone user@host:/path/to/repo`
 ## remotely adding ssh-key 
-`ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.0.186`
+`ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
 ###### with different port than 22
 `ssh-copy-id -i ~/.ssh/id_rsa.pub "root@192.168.0.104 -p 48222"`
 ## importing functions
