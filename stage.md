@@ -17,6 +17,9 @@ for file in functions/* ; do
   fi
 done
 ```
+## when git doesnt work
+`rsync -azvP takeover-site user@host:/path/to/repo`
+
 ## installing git flow
 `apt-get install git-flow`
 ##git multiple results error
