@@ -25,7 +25,7 @@ done
 ##git multiple results error
 `git config --global --get-all user.name` 
 
-## appending textfile to an existing file
+## appending textfile to an existing file on a remote location
 ```bash
 rsync -az etc/config/config -e "ssh -p $git_ssh_port" user@host:$checkout/config/temp_config.txt
 ssh user@host "cat $checkout/config/temp_config.txt >> $checkout/config/config"
