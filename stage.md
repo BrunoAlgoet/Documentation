@@ -25,6 +25,13 @@ done
 ##git multiple results error
 `git config --global --get-all user.name` 
 
+## appending text to a file
+```bash
+rsync -az etc/config/config -e "ssh -p $git_ssh_port" user@host:$checkout/config/temp_config.txt
+execute $git_ssh_user $git_host $git_ssh_port "cat $checkout/config/temp_config.txt >> $checkout/config/config"
+execute $git_ssh_user $git_host $git_ssh_port "rm $checkout/config/temp_config.txt"
+```
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
@@ -32,4 +39,5 @@ done
 | set -x | bij het debuggen van scripts |
 | bash -x | ook usefull bij debugging |
 | tee | splits output naar een extra file bijvoorbeeld debug.log |
+| less | less is more (for opening a file) |
 
