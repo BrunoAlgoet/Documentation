@@ -8,7 +8,7 @@ sudo apt-get install lamp-server^
 ## remotely adding ssh-key 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
 ###### with different port than 22
-`ssh-copy-id -i ~/.ssh/id_rsa.pub "root@192.168.0.104 -p 48222"`
+`ssh-copy-id -i ~/.ssh/id_rsa.pub "user@host -p 48222"`
 ## importing functions
 ```bash
 for file in functions/* ; do
@@ -18,7 +18,7 @@ for file in functions/* ; do
 done
 ```
 ## when git doesnt work
-`rsync -azvP takeover-site user@host:/path/to/repo`
+`rsync -azvP dir_name user@host:/path/to/repo`
 
 ## installing git flow
 `apt-get install git-flow`
@@ -27,9 +27,9 @@ done
 
 ## appending textfile to an existing file on a remote location
 ```bash
-rsync -az etc/config/config -e "ssh -p $git_ssh_port" user@host:$checkout/config/temp_config.txt
-ssh user@host "cat $checkout/config/temp_config.txt >> $checkout/config/config"
-ssh user@host $git_ssh_user $git_host $git_ssh_port "rm $checkout/config/temp_config.txt"
+rsync -az path/config -e "ssh -p gitport" user@host:path/temp_config.txt
+ssh user@host "cat path/temp_config.txt >> path/config"
+ssh user@host "rm path/config/temp_config.txt"
 ```
 
 | Command | Description |
