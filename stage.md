@@ -28,8 +28,8 @@ done
 ## appending text to a file
 ```bash
 rsync -az etc/config/config -e "ssh -p $git_ssh_port" user@host:$checkout/config/temp_config.txt
-execute $git_ssh_user $git_host $git_ssh_port "cat $checkout/config/temp_config.txt >> $checkout/config/config"
-execute $git_ssh_user $git_host $git_ssh_port "rm $checkout/config/temp_config.txt"
+ssh user@host "cat $checkout/config/temp_config.txt >> $checkout/config/config"
+ssh user@host $git_ssh_user $git_host $git_ssh_port "rm $checkout/config/temp_config.txt"
 ```
 
 | Command | Description |
