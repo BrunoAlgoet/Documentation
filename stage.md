@@ -32,6 +32,12 @@ ssh user@host "cat path/temp_config.txt >> path/config"
 ssh user@host "rm path/config/temp_config.txt"
 ```
 
+## static ip address toekennen
+sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
+
+## ssh probleem
+`tracepath ip`
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
