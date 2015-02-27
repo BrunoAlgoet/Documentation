@@ -9,6 +9,11 @@ sudo apt-get install lamp-server^
 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
 ###### with different port than 22
 `ssh-copy-id -i ~/.ssh/id_rsa.pub "user@host -p 48222"`
+## when ssh-copy-id doesnt work, force it
+`cat /root/.ssh/id_rsa.pub | ssh user@host 'cat > /root/.ssh/authorized_keys'`
+also look in:
+cat /root/.ssh/id_rsa
+cat /root/.ssh/id_rsa.pub
 ## importing functions
 ```bash
 for file in functions/* ; do
