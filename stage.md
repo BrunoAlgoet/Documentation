@@ -15,6 +15,7 @@ sudo apt-get install lamp-server^
 also look in:
 - cat /root/.ssh/id_rsa
 - cat /root/.ssh/id_rsa.pub
+
 ## importing functions
 ```bash
 for file in functions/* ; do
