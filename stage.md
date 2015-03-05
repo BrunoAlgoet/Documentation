@@ -45,6 +45,11 @@ sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
 ## ssh probleem
 `tracepath ip`
 
+## MySQL database commands
+`mysql --database=dbname --host=localhost --user=usr --password=pw`
+`DROP DATABASE dbname`
+`DROP USER 'user'@'localhost'`
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
