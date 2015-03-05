@@ -53,4 +53,5 @@ sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
 | bash -x | ook usefull bij debugging |
 | tee | splits output naar een extra file bijvoorbeeld debug.log |
 | less | less is more (for opening a file) |
+| drush cc drush | in docroot clear cache |
 
