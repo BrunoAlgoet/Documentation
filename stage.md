@@ -46,9 +46,9 @@ sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
 `tracepath ip`
 
 ## MySQL database commands
-`mysql --database=dbname --host=localhost --user=usr --password=pw`
-`DROP DATABASE dbname`
-`DROP USER 'user'@'localhost'`
+- `mysql --database=dbname --host=localhost --user=usr --password=pw`
+- `DROP DATABASE dbname`
+- `DROP USER 'user'@'localhost'`
 
 ## Deploying SSL keys
 protect a key with a passphrase
