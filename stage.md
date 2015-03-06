@@ -50,6 +50,12 @@ sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
 `DROP DATABASE dbname`
 `DROP USER 'user'@'localhost'`
 
+## Deploying SSL keys
+protect a key with a passphrase
+`openssl rsa -des -in insecure.key -out secure.key`
+Reverse it with
+`openssl rsa -in secure.key -out insecure.key -passin pass:{your_pass_phrase_here}`
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
