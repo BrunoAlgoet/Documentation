@@ -42,6 +42,9 @@ ssh user@host "rm path/config/temp_config.txt"
 ## static ip address toekennen
 sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
 
+## interface up forcen
+`ifup eth0`
+
 ## ssh probleem
 `tracepath ip`
 
