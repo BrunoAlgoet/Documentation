@@ -60,6 +60,24 @@ protect a key with a passphrase
 Reverse it with
 `openssl rsa -in secure.key -out insecure.key -passin pass:{your_pass_phrase_here}`
 
+## Configuring a wireless router
+setup1 dissable
+DNS: 192.168.1.x
+WAN PORT enable
+DHCP: forward
+local ip: 192.168.1.x
+
+wireless
+AP: mixed
+SSID: name_of_the_network
+bridged: enabled (unbriged will make WLAN & lan seperate vlans and a wpc wont see pc's)
+security WPA2PM
+TKIP + EAS
+pw: ***********
+3600
+
+dissable firewall
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
