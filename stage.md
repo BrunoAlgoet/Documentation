@@ -3,7 +3,7 @@
 sudo apt-get update
 sudo apt-get install lamp-server^
 ```
-## clone a repo from hera exaple:
+## clone a repo example:
 `git clone user@host:/path/to/repo`
 ## remotely adding ssh-key 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
