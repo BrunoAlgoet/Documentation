@@ -78,6 +78,20 @@ wireless
 
 dissable firewall
 
+##removing something from the start or end of a variable
+```
+path=/path/to/file/drive/file/path/
+echo ${path#/path/to/file/drive/}
+```
+The #.. part strips off a leading matching string when the variable is expanded
+
+You can strip matching strings (e.g., an extension) from the end of a variable using %...
+```
+path=/path/to/file/drive/file/path/
+echo ${path%/file/path/}
+```
+
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
@@ -87,4 +101,6 @@ dissable firewall
 | tee | splits output naar een extra file bijvoorbeeld debug.log |
 | less | less is more (for opening a file) |
 | drush cc drush | in docroot clear cache |
+| grep ^name | het dakje verankerd "name" zodat alleen maar de instanties die beginnen met "name" worden opgehaalt |
+| grep name$ | zelfde als ^ maar dan voor achteraan de regel |
 
