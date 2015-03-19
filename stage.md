@@ -78,6 +78,10 @@ wireless
 
 dissable firewall
 
+bridged: WLAN to LAN. Unbridged: seperate VLAN
+
+dnsmasq: local DNS server for the network. Forwards querys upstream. DHCP intergrates with the DNS server and allows local machines with DHCP allocated addresses to appear in the DNS
+
 ##removing something from the start or end of a variable
 ```
 path=/path/to/file/drive/file/path/
