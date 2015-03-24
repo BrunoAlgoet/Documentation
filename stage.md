@@ -95,6 +95,9 @@ path=/path/to/file/drive/file/path/
 echo ${path%/file/path/}
 ```
 
+##display error logs
+example:
+`tail -f /var/log/apache2/error.log`
 
 | Command | Description |
 | ------- | ------ |
