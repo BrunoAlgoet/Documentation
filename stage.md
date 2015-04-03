@@ -99,6 +99,9 @@ echo ${path%/file/path/}
 example:
 `tail -f /var/log/apache2/error.log`
 
+##get root acces on a vagrant box
+`sudo su -`
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
