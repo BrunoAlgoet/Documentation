@@ -102,6 +102,11 @@ example:
 ##get root acces on a vagrant box
 `sudo su -`
 
+## Using nmap to scan all your open ports
+This command will scan all of your local IP range (assuming your in the 192.168.1.0-254 range), and will perform service identification (-sV) and will scan all ports (-p 1-65535).
+`nmap -sV -p 1-65535 192.168.1.1/24`
+
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
