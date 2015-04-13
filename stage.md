@@ -107,7 +107,7 @@ This command will scan all of your local IP range (assuming your in the 192.168.
 `nmap -sV -p 1-65535 192.168.1.1/24`
 
 ## postfix mail testen
-`drush php-eval "print mail('paul@dropsolid.com','Test subject from drush','Test message','From: drush@exampledrupalsite.com');"`
+`drush php-eval "print mail('bruno@dropsolid.com','Test subject from drush','Test message','From: drush@exampledrupalsite.com');"`
 in /var/www/dynacodoor.com/docroot
 
 
