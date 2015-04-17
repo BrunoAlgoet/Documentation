@@ -110,6 +110,8 @@ This command will scan all of your local IP range (assuming your in the 192.168.
 `drush php-eval "print mail('bruno@dropsolid.com','Test subject from drush','Test message','From: drush@exampledrupalsite.com');"`
 in /var/www/dynacodoor.com/docroot
 
+## Give a dev permission to git clone
+`usermod -a -G projectname devname`
 
 | Command | Description |
 | ------- | ------ |
