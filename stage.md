@@ -113,6 +113,9 @@ in /var/www/dynacodoor.com/docroot
 ## Give a dev permission to git clone
 `usermod -a -G projectname devname`
 
+## create ansible user password
+`mkpasswd --method=SHA-512 'password'`
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
