@@ -122,6 +122,9 @@ first run
 then add `export PATH="$HOME/.composer/vendor/bin:$PATH"`
 at the end of your /root/bash.bashrc file
 
+## ansible debugging
+`msg: failed to checksum remote file. Checksum error code: 3`
+add trailing slash to destination
 
 | Command | Description |
 | ------- | ------ |
