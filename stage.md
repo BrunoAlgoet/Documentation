@@ -120,7 +120,7 @@ in /var/www/dynacodoor.com/docroot
 first run
 `composer global require drush/drush:dev-master`
 then add `export PATH="$HOME/.composer/vendor/bin:$PATH"`
-into your /root/bash.bashrc
+at the end of your /root/bash.bashrc file
 
 
 | Command | Description |
