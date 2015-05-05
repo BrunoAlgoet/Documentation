@@ -116,6 +116,13 @@ in /var/www/dynacodoor.com/docroot
 ## create ansible user password
 `mkpasswd --method=SHA-512 'password'`
 
+## install drush 7.0 with composer
+first run
+`composer global require drush/drush:dev-master`
+then add `export PATH="$HOME/.composer/vendor/bin:$PATH"`
+into your /root/bash.bashrc
+
+
 | Command | Description |
 | ------- | ------ |
 | $? |  Expands to the exit status of the most recently executed foreground pipeline |
