@@ -131,6 +131,11 @@ Perl warning:
 `locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8`
 `dpkg-reconfigure locales`
 
+## Remove break lines in sublime text
+Replace with Ctrl+H
+make sure regular expression are enabled alt+R
+find what: ^\n
+Replace With: (nothing, leave in blank).
 
 | Command | Description |
 | ------- | ------ |
