@@ -132,10 +132,10 @@ Perl warning:
 `dpkg-reconfigure locales`
 
 ## Remove break lines in sublime text
-Replace with Ctrl+H
-Make sure regular expression are enabled alt+R
-Find what: `^\n`
-Replace With: (nothing, leave in blank)
+- Replace with Ctrl+H
+- Make sure regular expression are enabled alt+R
+- Find what: `^\n`
+- Replace With: (nothing, leave in blank)
 
 
 | Command | Description |
