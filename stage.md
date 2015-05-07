@@ -125,6 +125,9 @@ at the end of your /root/bash.bashrc file
 ## ansible debugging
 `msg: failed to checksum remote file. Checksum error code: 3`
 add trailing slash to destination
+Perl warning:
+`locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8`
+`dpkg-reconfigure locales`
 
 | Command | Description |
 | ------- | ------ |
