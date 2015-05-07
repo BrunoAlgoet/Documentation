@@ -133,9 +133,9 @@ Perl warning:
 
 ## Remove break lines in sublime text
 Replace with Ctrl+H
-make sure regular expression are enabled alt+R
-find what: `^\n`
-Replace With: (nothing, leave in blank).
+Make sure regular expression are enabled alt+R
+Find what: `^\n`
+Replace With: (nothing, leave in blank)
 
 
 | Command | Description |
