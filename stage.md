@@ -138,7 +138,7 @@ Perl warning:
 - Replace With: (nothing, leave in blank)
 
 ## Run an Ansible playbook using a parallelism level of 10
-`ansible-playbook playbook.yml -f 10`
+- `ansible-playbook testplatform.yml -f 10 --extra-vars "@host_vars/jenrepo.yml"`
 
 | Command | Description |
 | ------- | ------ |
