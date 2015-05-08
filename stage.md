@@ -128,8 +128,8 @@ add trailing slash to destination
 
 ## Script debugging
 Perl warning:
-`locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8`
-`dpkg-reconfigure locales`
+- `locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8`
+- `dpkg-reconfigure locales`
 
 ## Remove break lines in sublime text
 - Replace with Ctrl+H
@@ -137,6 +137,8 @@ Perl warning:
 - Find what: `^\n`
 - Replace With: (nothing, leave in blank)
 
+## Run an Ansible playbook using a parallelism level of 10
+`ansible-playbook playbook.yml -f 10`
 
 | Command | Description |
 | ------- | ------ |
