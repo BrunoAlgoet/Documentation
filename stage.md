@@ -140,6 +140,15 @@ Perl warning:
 ## Run an Ansible playbook using a parallelism level of 10
 - `ansible-playbook testplatform.yml -f 10 --extra-vars "@host_vars/jenrepo.yml"`
 
+## Mount folder/filesystem through SSH
+- `sshfs name@server:/path/to/folder /path/to/mount/point`
+
+## Compare a remote file with a local file
+- `ssh user@host cat /path/to/remotefile | diff /path/to/localfile -`
+
+## stopwatch
+- `time read (ctrl-d to stop)`
+
 ## Various useful commands
 
 | Command | Description |
@@ -153,4 +162,5 @@ Perl warning:
 | drush cc drush | in docroot clear cache |
 | grep ^name | het dakje verankerd "name" zodat alleen maar de instanties die beginnen met "name" worden opgehaalt |
 | grep name$ | zelfde als ^ maar dan voor achteraan de regel |
-
+| ctrl-x e | Rapidly invoke an editor to write a long, complex, or tricky command |
+| ctrl-l | Clear the terminal screen |
