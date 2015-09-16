@@ -149,6 +149,10 @@ Perl warning:
 ## stopwatch
 - `time read (ctrl-d to stop)`
 
+## Add repo to gitlab
+`git remote add gitlab git@gitlab.com:GROEPNAAM/PROJECTNAAM.git`
+`git push gitlab master`
+
 ## Various useful commands
 
 | Command | Description |
