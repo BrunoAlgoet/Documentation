@@ -151,7 +151,11 @@ Perl warning:
 
 ## Add repo to gitlab
 `git remote add gitlab git@gitlab.com:GROEPNAAM/PROJECTNAAM.git`
+
 `git push gitlab master`
+
+## List directories 2 levels deep
+`tree -d -L 2`
 
 ## Various useful commands
 
