@@ -157,6 +157,16 @@ Perl warning:
 ## List directories 2 levels deep
 `tree -d -L 2`
 
+## find all git folders
+`find . -type d -name ".git" \`
+`&& find . -name ".gitignore" \`
+`&& find . -name ".gitmodules"`
+
+add `xargs rm -rf` to remove them
+
+## rsync only folders
+`rsync -av -f"+ */" -f"- *" /path/to/apache/logs/ root@www433.nixcraft.net.in:/path/to/apache/logs/`
+
 ## Various useful commands
 
 | Command | Description |
