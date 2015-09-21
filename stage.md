@@ -157,10 +157,10 @@ Perl warning:
 ## List directories 2 levels deep
 `tree -d -L 2`
 
-## find all git folders
-`find . -type d -name ".git" \`
-`&& find . -name ".gitignore" \`
-`&& find . -name ".gitmodules"`
+## find all git folders and remove them
+`( find . -type d -name ".git" \`
+  `&& find . -name ".gitignore" \`
+ ` && find . -name ".gitmodules" ) | xargs rm -rf`
 
 add `xargs rm -rf` to remove them
 
