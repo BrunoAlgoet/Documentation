@@ -162,10 +162,19 @@ Perl warning:
   `&& find . -name ".gitignore" \`
  ` && find . -name ".gitmodules" ) | xargs rm -rf`
 
-add `xargs rm -rf` to remove them
-
 ## rsync only folders
 `rsync -av -f"+ */" -f"- *" /path/to/apache/logs/ root@www433.nixcraft.net.in:/path/to/apache/logs/`
+
+## Git revert to a specific commit
+`git revert 3d5575f8e4c97ddab8ad5d540fee4664c04db75d`
+
+## Git make a new tag
+first commit the changes then
+`git tag 7.x-1.12`
+
+## Remove a git tag from remote
+`git tag -d 12345`
+`git push origin :refs/tags/12345`
 
 ## Various useful commands
 
