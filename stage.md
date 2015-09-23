@@ -176,6 +176,10 @@ first commit the changes then
 `git tag -d 12345`
 `git push origin :refs/tags/12345`
 
+## Add to the end of the url to login to a new drupal site
+
+`http://www.your-website-name.com/?q=user/login`
+
 ## Various useful commands
 
 | Command | Description |
