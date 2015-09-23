@@ -180,6 +180,10 @@ first commit the changes then
 
 `http://www.your-website-name.com/?q=user/login`
 
+## drupal drush file sync
+
+`drush core-rsync @project.staging:%files @project.local:%files`
+
 ## Various useful commands
 
 | Command | Description |
