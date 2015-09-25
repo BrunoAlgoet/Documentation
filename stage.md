@@ -188,6 +188,10 @@ first commit the changes then
 
 `ssh remoteserver "mysqldump -uuser -ppw project_staging" | mysql -uuser -ppw project_local`
 
+## open a file with nano starting at a certain line
+
+`nano +115 filename`
+
 ## Various useful commands
 
 | Command | Description |
