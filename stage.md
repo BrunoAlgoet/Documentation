@@ -184,6 +184,10 @@ first commit the changes then
 
 `drush core-rsync @project.staging:%files @project.local:%files`
 
+## grabbing a remote db and pulling it locally
+
+`ssh remoteserver "mysqldump -uuser -ppw project_staging" | mysql -uuser -ppw project_local`
+
 ## Various useful commands
 
 | Command | Description |
