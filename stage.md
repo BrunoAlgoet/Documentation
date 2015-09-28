@@ -201,6 +201,14 @@ this will truncate every table
 
 `mysql -Nse 'show tables' DATABASE_NAME | while read table; do mysql -e "truncate table $table" DATABASE_NAME; done`
 
+## Sed dry run
+
+`sed 's#WORDTOREPLACE#REPLACEWITH#g' /path/to/file.sh`
+
+## Sed replace one word with another
+
+`sed -i 's#WORDTOREPLACE#REPLACEWITH#g' /path/to/file.sh`
+
 ## Various useful commands
 
 | Command | Description |
