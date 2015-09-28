@@ -192,6 +192,12 @@ first commit the changes then
 
 `nano +115 filename`
 
+## Drop or truncate a mysql database
+This will drop every table
+`mysql -Nse 'show tables' DATABASE_NAME | while read table; do mysql -e "drop table $table" DATABASE_NAME; done`
+this will truncate every table
+`mysql -Nse 'show tables' DATABASE_NAME | while read table; do mysql -e "truncate table $table" DATABASE_NAME; done`
+
 ## Various useful commands
 
 | Command | Description |
