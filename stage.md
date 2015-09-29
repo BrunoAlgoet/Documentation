@@ -209,6 +209,15 @@ this will truncate every table
 
 `sed -i 's#WORDTOREPLACE#REPLACEWITH#g' /path/to/file.sh`
 
+## Iptables
+
+```
+iptables -L
+iptables-save > /opt/iptables.tmp
+nano /opt/iptables.tmp #make changes here
+iptables-restore < /opt/iptables.tmp
+```
+
 ## Various useful commands
 
 | Command | Description |
