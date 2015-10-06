@@ -218,6 +218,10 @@ nano /opt/iptables.tmp #make changes here
 iptables-restore < /opt/iptables.tmp
 ```
 
+## Send a test mail
+
+`sendmail -t  < $dev.email`
+
 ## Various useful commands
 
 | Command | Description |
