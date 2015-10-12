@@ -222,6 +222,14 @@ iptables-restore < /opt/iptables.tmp
 
 `sendmail -t  < $dev.email`
 
+## Useful docker commands
+
+```
+docker exec -it some-mysql bash
+docker logs some-mysql
+docker inspect some-mysql | grep IPAddress
+```
+
 ## Various useful commands
 
 | Command | Description |
