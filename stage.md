@@ -234,6 +234,12 @@ docker inspect some-mysql | grep IPAddress
 
 `curl -X GET "https://api.digitalocean.com/v2/images?page=3" -H "Authorization: Bearer $TOKEN" | python -mjson.tool | less`
 
+## Switch to a different branch which you do not have locally
+```
+git fetch gitlab hera
+git checkout -t gitlab/hera
+```
+
 ## Various useful commands
 
 | Command | Description |
