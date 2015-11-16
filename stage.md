@@ -239,6 +239,9 @@ docker inspect some-mysql | grep IPAddress
 git fetch gitlab hera
 git checkout -t gitlab/hera
 ```
+## Jenkins build bootstrap error spam
+Voeg volgend lijntje toe aan docroot/sites/default/settings.php
+`include DRUPAL_ROOT . '/sites/all/modules/contrib/domain/settings.inc';`
 
 ## Various useful commands
 
