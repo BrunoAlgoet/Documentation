@@ -3,8 +3,6 @@
 sudo apt-get update
 sudo apt-get install lamp-server^
 ```
-## clone a repo example:
-`git clone user@host:/path/to/repo`
 ## remotely adding ssh-key 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
 ###### with different port than 22
@@ -16,7 +14,7 @@ also look in:
 - cat /root/.ssh/id_rsa
 - cat /root/.ssh/id_rsa.pub
 
-## importing functions
+## importing bash functions
 ```bash
 for file in functions/* ; do
   if [ -f "$file" ] ; then
