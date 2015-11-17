@@ -243,6 +243,21 @@ git checkout -t gitlab/hera
 Voeg volgend lijntje toe aan docroot/sites/default/settings.php
 `include DRUPAL_ROOT . '/sites/all/modules/contrib/domain/settings.inc';`
 
+## Php test mail
+```
+<?php 
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = "infra@dropsolid.com";
+    $to = "bruno@dropsolid.com";
+    $subject = "PHP Mail Test script";
+    $message = "This is a test to check the PHP Mail functionality";
+    $headers = "From:" . $from;
+    mail($to,$subject,$message, $headers);
+    echo "Test email sent";
+?>
+```
+
 ## Various useful commands
 
 | Command | Description |
