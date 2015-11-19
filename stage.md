@@ -255,6 +255,12 @@ Voeg volgend lijntje toe aan docroot/sites/default/settings.php
     echo "Test email sent";
 ?>
 ```
+## Decent Drupal errors instead of whitepage, add in settings.php
+```
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+```
 
 ## Various useful commands
 
