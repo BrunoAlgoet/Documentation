@@ -261,6 +261,20 @@ error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
 ```
+## ~/.bashrc settings
+```bash
+# Key bindings, up/down arrow searches through history
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\eOA": history-search-backward'
+bind '"\eOB": history-search-forward'
+
+# Directory listing and file system
+alias l='ls -l --si --time-style=long-iso'
+alias la='ls -la --si --time-style=long-iso'
+alias ll='ls -l  --si --time-style=long-iso'
+alias lh='ls -lh  --si --time-style=long-iso'
+```
 
 ## Various useful commands
 
