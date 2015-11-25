@@ -276,6 +276,9 @@ alias ll='ls -l  --si --time-style=long-iso'
 alias lh='ls -lh  --si --time-style=long-iso'
 ```
 
+## clear varnish
+`ssh user@host  'curl -X BAN localhost'`
+
 ## Various useful commands
 
 | Command | Description |
