@@ -279,6 +279,9 @@ alias lh='ls -lh  --si --time-style=long-iso'
 ## clear varnish
 `ssh user@host  'curl -X BAN localhost'`
 
+## Synchronize the System Clock
+`apt-get install ntp ntpdate`
+
 ## Various useful commands
 
 | Command | Description |
