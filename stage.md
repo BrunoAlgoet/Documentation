@@ -282,6 +282,10 @@ alias lh='ls -lh  --si --time-style=long-iso'
 ## Synchronize the System Clock
 `apt-get install ntp ntpdate`
 
+## Crontab
+List cron jobs `crontab -l` 
+Remove all cron jobs `crontab -r`
+
 ## Various useful commands
 
 | Command | Description |
@@ -291,7 +295,6 @@ alias lh='ls -lh  --si --time-style=long-iso'
 | set -x | bij het debuggen van scripts |
 | bash -x | ook usefull bij debugging |
 | tee | splits output naar een extra file bijvoorbeeld debug.log |
-| less | less is more (for opening a file) |
 | drush cc drush | in docroot clear cache |
 | grep ^name | het dakje verankerd "name" zodat alleen maar de instanties die beginnen met "name" worden opgehaalt |
 | grep name$ | zelfde als ^ maar dan voor achteraan de regel |
