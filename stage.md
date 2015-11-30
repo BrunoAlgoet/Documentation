@@ -286,6 +286,13 @@ alias lh='ls -lh  --si --time-style=long-iso'
 List cron jobs `crontab -l` 
 Remove all cron jobs `crontab -r`
 
+## domain name migratie: add in .htaccess as first rules in the rewite block, before Drupal can do anything internally
+
+```bash
+  RewriteCond %{HTTP_HOST} ^(www\.)?domain.com  [NC]
+  RewriteRule ^ http://www.newdomain.com [R=301,L]
+```
+
 ## Various useful commands
 
 | Command | Description |
