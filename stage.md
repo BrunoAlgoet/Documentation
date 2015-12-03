@@ -293,6 +293,14 @@ Remove all cron jobs `crontab -r`
   RewriteRule ^ http://www.newdomain.com [R=301,L]
 ```
 
+## making sure varnish is working
+
+* inspect element -> network -> reload
+* choose a random file
+* check X-Cache-Hits variable is > 0
+* run cron jobs on the site
+* check if X-Cache-Hits is reset
+
 ## Various useful commands
 
 | Command | Description |
