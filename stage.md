@@ -30,6 +30,9 @@ done
 ##git multiple results error
 `git config --global --get-all user.name` 
 
+##show the history changes of a file
+`git log -p filename`
+
 ## appending textfile to an existing file on a remote location
 ```bash
 rsync -az path/config -e "ssh -p gitport" user@host:path/temp_config.txt
