@@ -310,7 +310,12 @@ journalctl --list-boots
 journalctl -b -1
 ```
 showing journal entries for a user unit `journalctl --user-unit ssh-agent.service` 
+
 instead of a system unit `journalctl --unit NetworkManager.service`
+
+## Reset mysql root pw on ubuntu
+
+`dpkg-reconfigure mysql-server-5.5`
 
 ## Various useful commands
 
