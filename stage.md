@@ -317,6 +317,14 @@ instead of a system unit `journalctl --unit NetworkManager.service`
 
 `dpkg-reconfigure mysql-server-5.5`
 
+## drupal console
+```bash
+$ curl http://drupalconsole.com/installer -L -o drupal.phar
+$ mv drupal.phar /usr/local/bin/drupal
+$ chmod 777 /usr/local/bin/drupal
+$ drupal list
+```
+
 ## Various useful commands
 
 | Command | Description |
