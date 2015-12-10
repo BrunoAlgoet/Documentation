@@ -319,10 +319,10 @@ instead of a system unit `journalctl --unit NetworkManager.service`
 
 ## drupal console
 ```bash
-$ curl http://drupalconsole.com/installer -L -o drupal.phar
-$ mv drupal.phar /usr/local/bin/drupal
-$ chmod 777 /usr/local/bin/drupal
-$ drupal list
+curl http://drupalconsole.com/installer -L -o drupal.phar
+mv drupal.phar /usr/local/bin/drupal
+chmod 777 /usr/local/bin/drupal
+drupal list
 ```
 
 ## Various useful commands
