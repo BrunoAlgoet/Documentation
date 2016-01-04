@@ -3,6 +3,9 @@
 sudo apt-get update
 sudo apt-get install lamp-server^
 ```
+## Generate ssh-key 
+`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+
 ## remotely adding ssh-key 
 `ssh-copy-id -i ~/.ssh/id_rsa.pub user@host`
 ###### with different port than 22
