@@ -328,6 +328,14 @@ chmod 777 /usr/local/bin/drupal
 drupal list
 ```
 
+## Drush alias problem checklist
+
+does the user have the right permissions on the server
+```bash
+drush @project sql-conf
+drush sa --with-db @project
+```
+
 ## Various useful commands
 
 | Command | Description |
