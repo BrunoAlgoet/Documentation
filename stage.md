@@ -336,6 +336,18 @@ drush @project sql-conf
 drush sa --with-db @project
 ```
 
+## Drupal change max upload size
+
+In de .htaccess van de site
+```bash
+<IfModule mod_php5.c>
+...
+php_value upload_max_filesize 10M
+php_value post_max_size 20M
+...
+</IfModule>
+```
+
 ## Various useful commands
 
 | Command | Description |
