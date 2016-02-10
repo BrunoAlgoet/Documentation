@@ -234,9 +234,10 @@ docker logs some-mysql
 docker inspect some-mysql | grep IPAddress
 ```
 
-## DigitalOcean list with images
+## DigitalOcean list with images/key ids
 
 `curl -X GET "https://api.digitalocean.com/v2/images?page=3" -H "Authorization: Bearer $TOKEN" | python -mjson.tool | less`
+`curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $TOKEN" "https://api.digitalocean.com/v2/account/keys"`
 
 ## Switch to a different branch which you do not have locally
 ```
