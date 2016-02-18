@@ -262,6 +262,8 @@ Voeg volgend lijntje toe aan docroot/sites/default/settings.php
     echo "Test email sent";
 ?>
 ```
+If this works but Drupal is still not sending mails, check if email reroute is not enable in Drupal.
+
 ## Decent Drupal errors instead of whitepage, add in settings.php
 ```
 error_reporting(E_ALL);
