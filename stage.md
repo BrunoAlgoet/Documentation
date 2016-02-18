@@ -351,6 +351,16 @@ php_value post_max_size 20M
 </IfModule>
 ```
 
+Drupal 8 settings file adjustments
+
+```php
+$settings[hash_salt] = '$ZELFDE_HASH_ALS_IN_DE_FILE';
+$config_directories[CONFIG_SYNC_DIRECTORY] = 'config/sync';
+$config_directories[CONFIG_STAGING_DIRECTORY] = 'config/staging';
+```
+
+van de directories nog een folder sync aanmaken
+
 ## Various useful commands
 
 | Command | Description |
