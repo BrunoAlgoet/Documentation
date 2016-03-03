@@ -362,6 +362,15 @@ $config_directories[CONFIG_STAGING_DIRECTORY] = 'config/staging';
 
 van de directories nog een folder sync aanmaken
 
+## backups intern
+
+Git repo in srv, juiste checkout doen en dan rsync
+
+```
+rsync -azvPn --exclude=.git . /path/to/www/project
+rsync -azvP --exclude=.git . /path/to/www/project
+```
+
 ## Various useful commands
 
 | Command | Description |
