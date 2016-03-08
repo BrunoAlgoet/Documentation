@@ -250,7 +250,7 @@ Voeg volgend lijntje toe aan docroot/sites/default/settings.php
 `include DRUPAL_ROOT . '/sites/all/modules/contrib/domain/settings.inc';`
 
 ## Php test mail
-```
+```php
 <?php 
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
@@ -262,6 +262,10 @@ Voeg volgend lijntje toe aan docroot/sites/default/settings.php
     mail($to,$subject,$message, $headers);
     echo "Test email sent";
 ?>
+
+//run from terminal
+
+php -r 'ini_set( 'display_errors', 1 ); error_reporting( E_ALL ); $from = "infra@dropsolid.com"; $to = "bruno@dropsolid.com"; $subject = "PHP Mail Test script"; $message = "This is a test to check the PHP Mail functionality"; $headers = "From:" . $from; mail($to,$subject,$message, $headers); echo "Test email sent";'
 ```
 If this works but Drupal is still not sending mails, check if email reroute is not enable in Drupal.
 
