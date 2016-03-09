@@ -114,13 +114,15 @@ This command will scan all of your local IP range (assuming your in the 192.168.
 `drush php-eval "print mail('bruno@dropsolid.com','Test subject from drush','Test message','From: drush@exampledrupalsite.com');"`
 in /var/www/dynacodoor.com/docroot
 
+```
 Via Telnet:
 telnet localhost 25
-ehlo example.com
+ehlo localhost
 mail from: username@example.com
 rcpt to: example@mail.com
 data
 Subject: My Telnet Test Email
+```
 
 ## Give a dev permission to git clone
 `usermod -a -G projectname devname`
