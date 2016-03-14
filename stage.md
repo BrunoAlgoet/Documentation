@@ -384,6 +384,9 @@ Git repo in srv, juiste checkout doen en dan rsync
 rsync -azvPn --exclude=.git . /path/to/www/project
 rsync -azvP --exclude=.git . /path/to/www/project
 ```
+## list open files
+
+lsof used in many Unix-like systems to report a list of all open files and the processes that opened them
 
 ## Various useful commands
 
