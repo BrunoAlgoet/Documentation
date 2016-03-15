@@ -388,6 +388,10 @@ rsync -azvP --exclude=.git . /path/to/www/project
 
 lsof used in many Unix-like systems to report a list of all open files and the processes that opened them
 
+## Drupal manual db install via the interface
+
+browse to the site.url/install.php
+
 ## Various useful commands
 
 | Command | Description |
