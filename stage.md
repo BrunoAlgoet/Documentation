@@ -392,6 +392,14 @@ lsof used in many Unix-like systems to report a list of all open files and the p
 
 browse to the site.url/install.php
 
+## Symphony / php code in browser instead of the site
+
+```
+apt-get install libapache2-mod-php5
+a2enmod php5
+a2enmod rewrite
+```
+
 ## Various useful commands
 
 | Command | Description |
