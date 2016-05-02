@@ -112,7 +112,7 @@ This command will scan all of your local IP range (assuming your in the 192.168.
 
 ## postfix mail testen
 `drush php-eval "print mail('bruno@dropsolid.com','Test subject from drush','Test message','From: drush@exampledrupalsite.com');"`
-in /var/www/dynacodoor.com/docroot
+in docroot
 
 ```
 Via Telnet:
