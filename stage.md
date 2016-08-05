@@ -400,6 +400,21 @@ a2enmod php5
 a2enmod rewrite
 ```
 
+## htaccess with htpasswd to allow localhost and server ip
+
+had to define custom error 401 reponse for the htaccess rules to work with Drupal
+
+```
+Order Deny,Allow
+Deny from all
+Allow from localhost
+Allow from 178.208.33.158
+Allow from 127.0.0.1
+Satisfy Any
+ErrorDocument 401 "Unauthorized"
+```
+
+
 ## Various useful commands
 
 | Command | Description |
