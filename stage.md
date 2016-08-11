@@ -325,6 +325,17 @@ Remove all cron jobs `crontab -r`
 * run cron jobs on the site
 * check if X-Cache-Hits is reset
 
+## Checking varnish port
+
+* check /etc/default/varnish for 
+```
+DAEMON_OPTS="-a :6081 \
+             -T localhost:6082 \
+```
+* check if the port is open with netstat -tulpn
+* check from the outside with nmap -PN IP -v
+* check the firewall with iptables -L
+
 ## Journalctl
 ```bash
 journalctl --list-boots
@@ -413,6 +424,8 @@ Allow from 127.0.0.1
 Satisfy Any
 ErrorDocument 401 "Unauthorized"
 ```
+
+
 
 
 ## Various useful commands
