@@ -425,7 +425,21 @@ Satisfy Any
 ErrorDocument 401 "Unauthorized"
 ```
 
+## Remove deploy needed info
 
+```
+IP addres
+ssh user / password
+writable folder met docroot onder (om updatescripts ed te kunnen runnen )
+database gegevens (host, username, database naam, password)
+
+Optioneel
+VPN type (ipsec of pks)
+VPN username and password
+VPN psk password /domain of group
+	IPSec ID ipsec.group.id
+	IPSec secret ipsec.group.pass
+```
 
 
 ## Various useful commands
