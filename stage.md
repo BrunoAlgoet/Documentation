@@ -441,6 +441,12 @@ VPN psk password /domain of group
 	IPSec secret ipsec.group.pass
 ```
 
+## Redirect to conetent of different domain without changing the url
+
+<noframes><p>Your user agent does not support frames or is currently configured not to display frames. However you may visit <a href="http://app4acc.iec-iab.be/">the page that was supposed to be here</a></p></noframes>
+
+Header
+X-Frame-Options:SAMEORIGIN
 
 ## Various useful commands
 
