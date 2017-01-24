@@ -448,6 +448,27 @@ VPN psk password /domain of group
 Header
 X-Frame-Options:SAMEORIGIN
 
+## 
+
+Connections were being closed and not opened fast enough by Apache when logged in, this caused Varnish to fallback to error 503 on slow requests (because backend not responding)
+
+Changed keepalive and connection reuse settings in apache and nginx to avoid this behaviour
+
+Nginx
+in /etc/nginx.conf
+```
+tcp_nodelay on;
+keepalive_timeout 65;
+```
+apache
+in /etc/apache2/apache2.conf
+```
+Timeout 300
+KeepAlive Off
+MaxKeepAliveRequests 100
+KeepAliveTimeout 5
+```
+
 ## Various useful commands
 
 | Command | Description |
