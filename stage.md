@@ -468,6 +468,10 @@ KeepAlive Off
 MaxKeepAliveRequests 100
 KeepAliveTimeout 5
 ```
+## Varnish 2.x cli cache clear/purge
+```
+varnishadm -T 127.0.0.1:6082 -S varnish_secret_file purge.url "url.tld"
+```
 
 ## Various useful commands
 
