@@ -448,7 +448,7 @@ VPN psk password /domain of group
 Header
 X-Frame-Options:SAMEORIGIN
 
-## 
+## 503 Bad gateway
 
 Connections were being closed and not opened fast enough by Apache when logged in, this caused Varnish to fallback to error 503 on slow requests (because backend not responding)
 
