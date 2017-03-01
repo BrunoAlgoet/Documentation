@@ -1,7 +1,6 @@
-## lamp stack in ubuntu via apt-get
-```bash
-sudo apt-get update
-sudo apt-get install lamp-server^
+## Fix borken screen
+```
+sudo service lightdm restart
 ```
 ## Generate ssh-key 
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
