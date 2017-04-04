@@ -1,6 +1,7 @@
 ## Fix borken screen
 ```
 sudo service lightdm restart
+For gnome you hit Alt + F2 and in the dialog enter r and Enter
 ```
 ## Generate ssh-key 
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
