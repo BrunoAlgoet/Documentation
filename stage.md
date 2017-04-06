@@ -3,6 +3,10 @@
 sudo service lightdm restart
 For gnome you hit Alt + F2 and in the dialog enter r and Enter
 ```
+Fix mouse reset in bottom left screen corner
+
+`xinput --set-prop 13 "Synaptics Noise Cancellation" 20 20`
+
 ## Generate ssh-key 
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
