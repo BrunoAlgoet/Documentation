@@ -7,6 +7,10 @@ Fix mouse reset in bottom left screen corner
 
 `xinput --set-prop 13 "Synaptics Noise Cancellation" 20 20`
 
+## Setup ssh tunnel (solr admin)
+
+`ssh -L localhost:8080:127.0.0.1:8983 user@hostname -N -C`
+
 ## Generate ssh-key 
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
