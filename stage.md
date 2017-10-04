@@ -1,3 +1,7 @@
+## Printer issue 
+
+We had a situation where the DHCP handed out 192.168.0.255 to someone over wireless and it prevented this person from accessing the printers. When manually switching the IP address to another one, everything worked as expected.
+
 ## Fix borken screen
 ```
 sudo service lightdm restart
