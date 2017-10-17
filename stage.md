@@ -1,3 +1,8 @@
+## Get authenticated cURL from your browser
+```
+chrome console -> network -> copy -> copy all as cURL
+```
+
 ## Printer issue 
 
 We had a situation where the DHCP handed out 192.168.0.255 to someone over wireless and it prevented this person from accessing the printers. When manually switching the IP address to another one, everything worked as expected.
@@ -7,7 +12,7 @@ We had a situation where the DHCP handed out 192.168.0.255 to someone over wirel
 sudo service lightdm restart
 For gnome you hit Alt + F2 and in the dialog enter r and Enter
 ```
-Fix mouse reset in bottom left screen corner
+## Fix mouse reset in bottom left screen corner
 
 `xinput --set-prop 13 "Synaptics Noise Cancellation" 20 20`
 
