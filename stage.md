@@ -1,3 +1,10 @@
+
+## Setting up single sign-on with ADFS and SAML 
+
+```
+Updating the SSL certificate of the ADFS also means that the SAML federation metadata gets updated with the new certificate signature, and need to be imported in simplesaml
+```
+
 ## Get authenticated cURL from your browser
 ```
 chrome console -> network -> copy -> copy all as cURL
