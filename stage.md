@@ -500,6 +500,9 @@ varnishadm -T 127.0.0.1:6082 -S varnish_secret_file purge.url "url.tld"
 ```
 varnishadm "ban req.http.host == url.tld"
 ```
+## Run apache in the foreground so it show all output (handy when mamp doesnt write the errors to the log)
+
+apachectl -DFOREGROUND
 
 ## Various useful commands
 
@@ -510,7 +513,6 @@ varnishadm "ban req.http.host == url.tld"
 | set -x | bij het debuggen van scripts |
 | bash -x | ook usefull bij debugging |
 | tee | splits output naar een extra file bijvoorbeeld debug.log |
-| drush cc drush | in docroot clear cache |
 | grep ^name | het dakje verankerd "name" zodat alleen maar de instanties die beginnen met "name" worden opgehaalt |
 | grep name$ | zelfde als ^ maar dan voor achteraan de regel |
 | ctrl-x e | Rapidly invoke an editor to write a long, complex, or tricky command |
