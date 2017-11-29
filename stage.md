@@ -500,6 +500,11 @@ varnishadm -T 127.0.0.1:6082 -S varnish_secret_file purge.url "url.tld"
 ```
 varnishadm "ban req.http.host == url.tld"
 ```
+## Varnish 503 Service unavailable error
+
+FetchError   c Invalid Gzip data: incorrect header check
+https://www.drupal.org/project/agrcache/issues/1464966
+
 ## Run apache in the foreground so it show all output (handy when mamp doesnt write the errors to the log)
 
 apachectl -DFOREGROUND
