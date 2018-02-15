@@ -1,3 +1,7 @@
+# Trigger varnish
+```
+curl -X BAN localhost
+```
 
 ## Setting up single sign-on with ADFS and SAML 
 
