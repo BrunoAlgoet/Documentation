@@ -513,6 +513,13 @@ https://www.drupal.org/project/agrcache/issues/1464966
 
 apachectl -DFOREGROUND
 
+Drupal sql mode fix
+
+see https://www.drupal.org/files/issues/drupal-mysql57SupportBrokenDueToSQLModes-2545480-e641385.patch
+```
+$databases['default']['default'] ['init_commands'] = ['sql_mode' => "SET sql_mode = 'REAL_AS_FLOAT,PIPES_AS_CONCAT,ANSI_QUOTES,IGNORE_SPACE,STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER'",];
+```
+
 ## Various useful commands
 
 | Command | Description |
