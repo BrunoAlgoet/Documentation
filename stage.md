@@ -69,8 +69,10 @@ ssh user@host "cat path/temp_config.txt >> path/config"
 ssh user@host "rm path/config/temp_config.txt"
 ```
 
-## static ip address toekennen
-sudo ifconfig eth1 192.168.1.136 netmask 255.255.255.0
+## wierd redirect in Drupal that is not in the redirect module or htaccess
+
+devel module aanzetten en naar variable editor gaan in drupal. Daar een search doen. Zal je path ook nog sturen
+url.com/devel/variable/edit
 
 ## interface up forcen
 `ifup eth0`
