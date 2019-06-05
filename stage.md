@@ -16,10 +16,6 @@ We had a situation where the DHCP handed out 192.168.0.255 to someone over wirel
 sudo service lightdm restart
 For gnome you hit Alt + F2 and in the dialog enter r and Enter
 ```
-## Fix mouse reset in bottom left screen corner
-
-`xinput --set-prop 13 "Synaptics Noise Cancellation" 20 20`
-
 ## Setup ssh tunnel (solr admin)
 
 `ssh -L localhost:8080:127.0.0.1:8983 user@hostname -N -C`
