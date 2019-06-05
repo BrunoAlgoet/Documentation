@@ -1,8 +1,3 @@
-# Trigger varnish
-```
-curl -X BAN localhost
-```
-
 ## Setting up single sign-on with ADFS and SAML 
 
 Updating the SSL certificate of the ADFS also means that the SAML federation metadata gets updated with the new certificate signature, and need to be imported in simplesaml
@@ -51,15 +46,7 @@ for file in functions/* ; do
   fi
 done
 ```
-## when git doesnt work
-`rsync -azvP dir_name user@host:/path/to/repo`
-
-## installing git flow
-`apt-get install git-flow`
-##git multiple results error
-`git config --global --get-all user.name` 
-
-##show the history changes of a file
+## show the history changes of a file
 `git log -p filename`
 
 ## appending textfile to an existing file on a remote location
@@ -71,19 +58,11 @@ ssh user@host "rm path/config/temp_config.txt"
 
 ## wierd redirect in Drupal that is not in the redirect module or htaccess
 
-devel module aanzetten en naar variable editor gaan in drupal. Daar een search doen. Zal je path ook nog sturen
+devel module aanzetten en naar variable editor gaan in drupal. Daar een search doen. path:
 url.com/devel/variable/edit
-
-## interface up forcen
-`ifup eth0`
 
 ## ssh probleem
 `tracepath ip`
-
-## MySQL database commands
-- `mysql --database=dbname --host=localhost --user=usr --password=pw`
-- `DROP DATABASE dbname`
-- `DROP USER 'user'@'localhost'`
 
 ## Deploying SSL keys
 protect a key with a passphrase
@@ -127,10 +106,6 @@ path=/path/to/file/drive/file/path/
 echo ${path%/file/path/}
 ```
 
-##display error logs
-example:
-`tail -f /var/log/apache2/error.log`
-
 ##get root acces on a vagrant box
 `sudo su -`
 
@@ -152,7 +127,7 @@ data
 Subject: My Telnet Test Email
 ```
 
-## Give a dev permission to git clone
+## Add user to a group
 `usermod -a -G projectname devname`
 
 ## create ansible user password
@@ -162,7 +137,7 @@ Subject: My Telnet Test Email
 first run
 `composer global require drush/drush:dev-master`
 then add `export PATH="$HOME/.composer/vendor/bin:$PATH"`
-at the end of your /root/bash.bashrc file
+at the end of your /root/.bashrc file
 
 ## ansible debugging
 `msg: failed to checksum remote file. Checksum error code: 3`
@@ -179,9 +154,6 @@ Perl warning:
 - Find what: `^\n`
 - Replace With: (nothing, leave in blank)
 
-## Run an Ansible playbook using a parallelism level of 10
-- `ansible-playbook testplatform.yml -f 10 --extra-vars "@host_vars/jenrepo.yml"`
-
 ## Mount folder/filesystem through SSH
 - `sshfs name@server:/path/to/folder /path/to/mount/point`
 
@@ -190,11 +162,6 @@ Perl warning:
 
 ## stopwatch
 - `time read (ctrl-d to stop)`
-
-## Add repo to gitlab
-`git remote add gitlab git@gitlab.com:GROEPNAAM/PROJECTNAAM.git`
-
-`git push gitlab master`
 
 ## List directories 2 levels deep
 `tree -d -L 2`
@@ -217,10 +184,6 @@ first commit the changes then
 ## Remove a git tag from remote
 `git tag -d 12345`
 `git push origin :refs/tags/12345`
-
-## Add to the end of the url to login to a new drupal site
-
-`http://www.your-website-name.com/?q=user/login`
 
 ## drupal drush file sync
 
@@ -272,17 +235,12 @@ docker logs some-mysql
 docker inspect some-mysql | grep IPAddress
 ```
 
-## DigitalOcean list with images/key ids
-
-`curl -X GET "https://api.digitalocean.com/v2/images?page=3" -H "Authorization: Bearer $TOKEN" | python -mjson.tool | less`
-
-`curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer $TOKEN" "https://api.digitalocean.com/v2/account/keys"`
-
 ## Switch to a different branch which you do not have locally
 ```
 git fetch gitlab hera
 git checkout -t gitlab/hera
 ```
+
 ## Jenkins build bootstrap error spam
 Voeg volgend lijntje toe aan docroot/sites/default/settings.php
 `include DRUPAL_ROOT . '/sites/all/modules/contrib/domain/settings.inc';`
@@ -334,10 +292,6 @@ alias lh='ls -lh  --si --time-style=long-iso'
 ## Synchronize the System Clock
 `apt-get install ntp ntpdate`
 
-## Crontab
-List cron jobs `crontab -l` 
-Remove all cron jobs `crontab -r`
-
 ## domain name migratie: add in .htaccess as first rules in the rewite block, before Drupal can do anything internally
 
 ```bash
@@ -372,10 +326,6 @@ journalctl -b -1
 showing journal entries for a user unit `journalctl --user-unit ssh-agent.service` 
 
 instead of a system unit `journalctl --unit NetworkManager.service`
-
-## Reset mysql root pw on ubuntu
-
-`dpkg-reconfigure mysql-server-5.5`
 
 ## drupal console
 ```bash
@@ -427,10 +377,6 @@ rsync -azvP --exclude=.git . /path/to/www/project
 
 lsof used in many Unix-like systems to report a list of all open files and the processes that opened them
 
-## Drupal manual db install via the interface
-
-browse to the site.url/install.php
-
 ## Symphony / php code in browser instead of the site
 
 ```
@@ -453,23 +399,7 @@ Satisfy Any
 ErrorDocument 401 "Unauthorized"
 ```
 
-## Remove deploy needed info
-
-```
-IP addres
-ssh user / password
-writable folder met docroot onder (om updatescripts ed te kunnen runnen )
-database gegevens (host, username, database naam, password)
-
-Optioneel
-VPN type (ipsec of pks)
-VPN username and password
-VPN psk password /domain of group
-	IPSec ID ipsec.group.id
-	IPSec secret ipsec.group.pass
-```
-
-## Redirect to conetent of different domain without changing the url
+## Redirect to content of different domain without changing the url
 
 <noframes><p>Your user agent does not support frames or is currently configured not to display frames. However you may visit <a href="http://app4acc.iec-iab.be/">the page that was supposed to be here</a></p></noframes>
 
@@ -511,11 +441,8 @@ varnishadm "ban req.http.host == url.tld"
 FetchError   c Invalid Gzip data: incorrect header check
 https://www.drupal.org/project/agrcache/issues/1464966
 
-## Run apache in the foreground so it show all output (handy when mamp doesnt write the errors to the log)
 
-apachectl -DFOREGROUND
-
-Drupal sql mode fix
+## Drupal sql mode fix
 
 see https://www.drupal.org/files/issues/drupal-mysql57SupportBrokenDueToSQLModes-2545480-e641385.patch
 ```
@@ -535,3 +462,10 @@ $databases['default']['default'] ['init_commands'] = ['sql_mode' => "SET sql_mod
 | grep name$ | zelfde als ^ maar dan voor achteraan de regel |
 | ctrl-x e | Rapidly invoke an editor to write a long, complex, or tricky command |
 | ctrl-l | Clear the terminal screen |
+
+## Troubleshooting high shared memory
+
+```
+du -aLh /proc/*/map_files/ /proc/*/fd/ | sort -h | tail -n 10
+```
+https://unix.stackexchange.com/questions/431982/what-could-be-using-6gb-of-my-swap
