@@ -445,6 +445,12 @@ see https://www.drupal.org/files/issues/drupal-mysql57SupportBrokenDueToSQLModes
 $databases['default']['default'] ['init_commands'] = ['sql_mode' => "SET sql_mode = 'REAL_AS_FLOAT,PIPES_AS_CONCAT,ANSI_QUOTES,IGNORE_SPACE,STRICT_TRANS_TABLES,STRICT_ALL_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER'",];
 ```
 
+## Sendgrid list mails per day
+
+```
+curl -s -X "GET" "https://api.sendgrid.com/v3/stats?start_date=2019-08-01&end_date=2019-08-30" -H "Authorization: Bearer ***KEY***" -H "Content-Type: application/json" | jq -r '.[] | [.date, .stats[].metrics.requests] | @tsv'
+```
+
 ## Various useful commands
 
 | Command | Description |
