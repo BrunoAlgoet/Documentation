@@ -1,3 +1,12 @@
+### find celery errors
+
+```
+nano /etc/conf.d/celery
+	add "C_FAKEFORK=1"
+service celery restart
+journalctl -u celery -e
+```
+
 ## Setting up single sign-on with ADFS and SAML 
 
 Updating the SSL certificate of the ADFS also means that the SAML federation metadata gets updated with the new certificate signature, and need to be imported in simplesaml
@@ -11,11 +20,6 @@ chrome console -> network -> copy -> copy all as cURL
 
 We had a situation where the DHCP handed out 192.168.0.255 to someone over wireless and it prevented this person from accessing the printers. When manually switching the IP address to another one, everything worked as expected.
 
-## Fix borken screen
-```
-sudo service lightdm restart
-For gnome you hit Alt + F2 and in the dialog enter r and Enter
-```
 ## Setup ssh tunnel (solr admin)
 
 `ssh -L localhost:8080:127.0.0.1:8983 user@hostname -N -C`
@@ -123,17 +127,8 @@ data
 Subject: My Telnet Test Email
 ```
 
-## Add user to a group
-`usermod -a -G projectname devname`
-
-## create ansible user password
+## create SHA-512 password
 `mkpasswd --method=SHA-512 'password'`
-
-## install drush 7.0 with composer
-first run
-`composer global require drush/drush:dev-master`
-then add `export PATH="$HOME/.composer/vendor/bin:$PATH"`
-at the end of your /root/.bashrc file
 
 ## ansible debugging
 `msg: failed to checksum remote file. Checksum error code: 3`
@@ -144,20 +139,11 @@ Perl warning:
 - `locale-gen en_US en_US.UTF-8 hu_HU hu_HU.UTF-8`
 - `dpkg-reconfigure locales`
 
-## Remove break lines in sublime text
-- Replace with Ctrl+H
-- Make sure regular expression are enabled alt+R
-- Find what: `^\n`
-- Replace With: (nothing, leave in blank)
-
 ## Mount folder/filesystem through SSH
 - `sshfs name@server:/path/to/folder /path/to/mount/point`
 
 ## Compare a remote file with a local file
 - `ssh user@host cat /path/to/remotefile | diff /path/to/localfile -`
-
-## stopwatch
-- `time read (ctrl-d to stop)`
 
 ## List directories 2 levels deep
 `tree -d -L 2`
@@ -180,10 +166,6 @@ first commit the changes then
 ## Remove a git tag from remote
 `git tag -d 12345`
 `git push origin :refs/tags/12345`
-
-## drupal drush file sync
-
-`drush core-rsync @project.staging:%files @project.local:%files`
 
 ## grabbing a remote db and pulling it locally
 
@@ -222,14 +204,6 @@ iptables-restore < /opt/iptables.tmp
 ## Send a test mail
 
 `sendmail -t  < $dev.email`
-
-## Useful docker commands
-
-```
-docker exec -it some-mysql bash
-docker logs some-mysql
-docker inspect some-mysql | grep IPAddress
-```
 
 ## Switch to a different branch which you do not have locally
 ```
@@ -285,9 +259,6 @@ alias lh='ls -lh  --si --time-style=long-iso'
 ## clear varnish
 `ssh user@host  'curl -X BAN localhost'`
 
-## Synchronize the System Clock
-`apt-get install ntp ntpdate`
-
 ## domain name migratie: add in .htaccess as first rules in the rewite block, before Drupal can do anything internally
 
 ```bash
@@ -323,13 +294,6 @@ showing journal entries for a user unit `journalctl --user-unit ssh-agent.servic
 
 instead of a system unit `journalctl --unit NetworkManager.service`
 
-## drupal console
-```bash
-curl http://drupalconsole.com/installer -L -o drupal.phar
-mv drupal.phar /usr/local/bin/drupal
-chmod 777 /usr/local/bin/drupal
-drupal list
-```
 
 ## Drush alias problem checklist
 
@@ -350,28 +314,6 @@ php_value post_max_size 20M
 ...
 </IfModule>
 ```
-
-## Drupal 8 settings file adjustments
-
-```php
-$settings[hash_salt] = '$ZELFDE_HASH_ALS_IN_DE_FILE';
-$config_directories[CONFIG_SYNC_DIRECTORY] = 'config/sync';
-$config_directories[CONFIG_STAGING_DIRECTORY] = 'config/staging';
-```
-
-van de directories nog een folder sync aanmaken
-
-## backups intern
-
-Git repo in srv, juiste checkout doen en dan rsync
-
-```
-rsync -azvPn --exclude=.git . /path/to/www/project
-rsync -azvP --exclude=.git . /path/to/www/project
-```
-## list open files
-
-lsof used in many Unix-like systems to report a list of all open files and the processes that opened them
 
 ## Symphony / php code in browser instead of the site
 
