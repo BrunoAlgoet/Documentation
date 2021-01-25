@@ -196,7 +196,7 @@ this will truncate every table
 
 ```
 iptables -L
-iptables-save > /opt/iptables.tmp
+iptables-save > /etc/iptables/rules.v4
 nano /opt/iptables.tmp #make changes here
 iptables-restore < /opt/iptables.tmp
 ```
